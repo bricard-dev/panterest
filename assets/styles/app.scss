@@ -1,0 +1,28 @@
+@import 'shared/variables';
+@import "~bootstrap";
+
+html,
+body {
+    font-family: $primary-font, sans-serif;
+}
+
+.alert {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+
+    &.alert-success {
+        background-color: green;
+    }
+
+    &.alert-error {
+        background-color: red;
+    }
+
+    &.alert-info {
+        background-color: orange;
+    }
+}
