@@ -24,6 +24,7 @@ yarn-error.log
 
 ###> custom env vars ###
 /public/uploads/
+.DS_Store
 ###< custom env vars ###
 
 ###> liip/imagine-bundle ###
