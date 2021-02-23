@@ -8,6 +8,8 @@ use Doctrine\Persistence\ObjectManager;
 
 class UserFixtures extends Fixture
 {
+    public const USER_REFERENCE = 'user';
+
     public function load(ObjectManager $manager)
     {
         $user1 = (new User)
@@ -27,5 +29,7 @@ class UserFixtures extends Fixture
         $manager->persist($user2);
 
         $manager->flush();
+
+        $this->addReference(self::USER_REFERENCE, $user1);
     }
 }
