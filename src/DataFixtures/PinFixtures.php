@@ -12,7 +12,7 @@ class PinFixtures extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
-        for ($i = 1; $i < 4; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $pin = (new Pin)
                 ->setTitle("Pin {$i}")
                 ->setDescription("Description {$i}")
