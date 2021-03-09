@@ -29,10 +29,10 @@ class ChangePasswordFormType extends AbstractType
                             'max' => 4096,
                         ]),
                     ],
-                    'label' => 'New password',
+                    'label' => 'New Password',
                 ],
                 'second_options' => [
-                    'label' => 'Confirm New Password',
+                    'label' => 'Confirm Your New Password',
                 ],
                 'invalid_message' => 'The password fields must match.',
                 // Instead of being set onto the object directly,
