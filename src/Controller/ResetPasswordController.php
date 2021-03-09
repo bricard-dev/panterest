@@ -156,7 +156,7 @@ class ResetPasswordController extends AbstractController
             return $this->redirectToRoute('app_check_email');
         }
 
-        $email = (new TemplatedEmail())
+        $email = (new TemplatedEmail)
             ->from(new Address(
                 $this->getParameter('app.mail_from_address'),
                 $this->getParameter('app.mail_from_name')
